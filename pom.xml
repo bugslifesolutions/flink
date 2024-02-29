@@ -94,7 +94,7 @@ under the License.
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<hadoop.version>2.8.5</hadoop.version>
+		<hadoop.version>3.2.4</hadoop.version>
 		<!-- Need to use a user property here because the surefire
 			 forkCount is not exposed as a property. With this we can set
 			 it on the "mvn" commandline in travis. -->
@@ -120,11 +120,11 @@ under the License.
 		<scala.version>2.12.7</scala.version>
 		<scala.binary.version>2.12</scala.binary.version>
 		<chill.version>0.7.6</chill.version>
-		<zookeeper.version>3.4.14</zookeeper.version>
+		<zookeeper.version>3.7.2</zookeeper.version>
 		<!-- Only the curator2 TestingServer works with ZK 3.4 -->
 		<curator.version>2.12.0</curator.version>
 		<prometheus.version>0.8.1</prometheus.version>
-		<avro.version>1.10.0</avro.version>
+		<avro.version>1.11.3</avro.version>
 		<javax.activation.api.version>1.2.0</javax.activation.api.version>
 		<jaxb.api.version>2.3.1</jaxb.api.version>
 		<junit4.version>4.13.2</junit4.version>
@@ -483,7 +483,7 @@ under the License.
 			<dependency>
 				<groupId>org.xerial.snappy</groupId>
 				<artifactId>snappy-java</artifactId>
-				<version>1.1.8.3</version>
+				<version>1.1.10.4</version>
 			</dependency>
 
 			<dependency>
@@ -649,7 +649,7 @@ under the License.
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-compress</artifactId>
-				<version>1.21</version>
+				<version>1.26.0</version>
 			</dependency>
 
 			<!-- Managed dependency required for HBase in flink-connector-hbase -->
@@ -795,7 +795,7 @@ under the License.
 				<!-- Bumped for security purposes and making it work with Jackson dependencies (2.10.1) -->
 				<groupId>org.yaml</groupId>
 				<artifactId>snakeyaml</artifactId>
-				<version>1.27</version>
+				<version>2.0</version>
 			</dependency>
 			<dependency>
 				<groupId>io.netty</groupId>
@@ -1872,7 +1872,7 @@ under the License.
 							<groupId>com.puppycrawl.tools</groupId>
 							<artifactId>checkstyle</artifactId>
 							<!-- Note: match version with docs/flinkDev/ide_setup.md -->
-							<version>8.14</version>
+							<version>8.29</version>
 						</dependency>
 					</dependencies>
 					<executions>
